@@ -1,0 +1,40 @@
+{
+    "name": "__MSG_desc__",
+    "manifest_version": 2,
+    "version": "0.2.9.0",
+    "description": "__MSG_desc__",
+    "default_locale": "ja",
+    "content_scripts": [{
+        "matches": [
+            "https://twitter.com/*",
+            "https://mobile.twitter.com/*"
+        ],
+        "js": [ "tw_fold.js" ]
+    }],
+    "browser_action": {
+      "default_icon": "tw16.png",
+      "default_title": "Twitter Stress Reduction"
+    },
+    "background": {
+        "scripts": [ "tw_background.js" ]
+    },
+    "options_ui": {
+        "page": "tw_fold.html",
+        "open_in_tab": true
+    },
+    "web_accessible_resources": [
+        "tw_fold.html"
+    ],
+    "icons": {
+        "16": "tw16.png",
+        "48": "tw48.png",
+        "128": "tw128.png"
+    },
+    "permissions": [
+        "https://twitter.com/*",
+        "https://mobile.twitter.com/*",
+        "contextMenus",
+        "storage"
+    ]
+}
+

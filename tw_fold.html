@@ -1,0 +1,133 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title id="desc"></title>
+<script src="tw_options.js"> </script>
+<style type="text/css">
+td { padding:10px; }
+</style>
+</head>
+<body id="body">
+<div style="margin:10px">
+<table border="1" style="width:100%">
+	<tr><td bgcolor="#dff">
+		<img src="tw48.png" style="position:absolute;"><H2 style="margin:0px; padding-left:70px; text-align:left">Twitter Stress Reduction <span style="font-weight:normal; font-size:80%;" id="opt_ver"></span></H2>
+
+		<div style="float:right; margin:0px;">
+		<a href="#history" id="opt_histlink"></a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="https://groups.google.com/g/twitter-stress-reduction" target="_blank" id="opt_bbs"></a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="https://shirouzu.jp/tech/twitter-stress-reduction" target="_blank" id="opt_home"></a>
+		</div>
+	</td></tr>
+	<tr>
+	<tr><td>
+		<table id="tw_sync" style="display:none; margin-left:50px;">
+		<tr><td bgcolor="#dff" >
+			<label><input type="checkbox" id="tw_sync_mode" style="margin-bottom:15px"><span id="opt_syncdesc"></span></label>
+			<span id="sync_help" style="border:2px solid; border-radius: 5px; border-color:#aaa; box-shadow: 1px 1px #777; cursor:pointer; background-color:#fff; padding:3px">?</span>
+
+			<br>
+			<span id="opt_syncid"></span>
+			<span style="user-select: none;">
+				<span id="tw_sync_key" style="user-select: text; background-color:#eee; margin:0px; padding:3px; padding-top:0px; border:2px solid; border-color:#777; font-weight:bold">xxxxxxxxxxxxxxxx</span>
+				<div id="opt_synchelp" style="position:absolute; border:2px solid; border-radius: 5px; border-color:#aaa; box-shadow: 2px 2px #777; cursor:pointer; background-color:#fff; word-wrap:break-word; padding:5px; font-size:90%; width:330px;  display:none"></div>
+				<input type="button" id="opt_import">
+				<input type="button" id="opt_revert">&nbsp;&nbsp;
+			</span>
+		</td></tr>
+		</table>
+		<input type="button" value="Sync (Experimental)" id="opt_sync_btn"  style="float:right; margin:5px;">
+		<input type="button" value="Close" id="tw_close" style="float:right; margin:5px;">
+		<div style="float:right; margin:5px;">
+			<label><input type="checkbox" id="tw_enabled"><span id="opt_enabled"></span></label>
+		</div>
+
+		<div style="margin:10px;">
+		<!-- <h2 id="opt_settings"></h2> -->
+		<span id="opt_purge_trends"></span>
+		<br>
+		<textarea id="tw_purge_trends" style="width:100%" spellcheck="false"></textarea><br>
+		<textarea readonly id="tw_check_result" style="background-color:#eff; width:80%; display:none; position:absolute; left:105px; margin:5px; border:1px solid; border-color:#777;" spellcheck="false"></textarea>
+		<input type="button" id="tw_check" value="Check" style="margin:5px">
+		<br>
+
+		<div style="margin:5px; padding:10px; margin-left:10px">
+		<span id="opt_purge_title"></span>
+		<br>
+		<textarea readonly cols="55" id="opt_purge_example" style="border:solid; border-color:#777;background-color:#ccc; width:95%" spellcheck="false"></textarea>
+		<br>
+		<span id="opt_purge_desc"></span><br>
+		</div>
+
+		<label><input type="checkbox" id="tw_movement"></input><span id="opt_movement"></span></label>
+		<br>
+		<label><input type="checkbox" id="tw_recommend"></input><span id="opt_recommend"></span></label>
+		<br>
+		<label><input type="checkbox" id="tw_recom_topic"></input><span id="opt_recom_topic"></span></label>
+		<br>
+		<label><input type="checkbox" id="tw_explore_verify"></input><span id="opt_explore_verify"></span></label>
+		<br>
+		<br>
+		<label><input type="checkbox" id="tw_promo_del"></input><span id="opt_promo_del"></span></label>
+		<br>
+		<label><input type="checkbox" id="tw_shortcut"></input><span id="opt_shortcut"></span></label>
+		<br>
+		<br>
+		<label><input type="checkbox" id="tw_fold"></input><span id="opt_fold"></span></label>
+		<br>
+		<label style="padding-left:20px;"><input type="checkbox" id="tw_explore_rev"></input><span id="opt_explore_rev"></span></label>
+		<br>
+		<br>
+		<label><input type="checkbox" id="tw_direct_pass"></input><span id="opt_direct_pass"></span></label>
+		</div>
+	</td></tr>
+
+	<tr><td bgcolor="#dff">
+		<div id="opt_uidesc" style="font-weight:bold"></div>
+		<div id="opt_uidesc_contents"></div>
+	</td></tr>
+
+	<tr><td>
+			<div id="opt_ex_title" style="font-weight:bold;"></div>
+			<hr style="margin-left:10px;">
+
+			<div id="opt_ex1_title" style="font-weight:bold; margin-left:10px;"></div>
+			<div id="opt_ex1_suppl" style="font-size:90%; margin-left:20px; "></div>
+			<div id="opt_ex1_desc"  style="margin:5px; margin-left:20px; padding:3px; background-color:#eee; border:2px solid; border-color:#ccc;"></div>
+			<hr style="margin-left:10px;">
+
+			<div id="opt_ex2_title" style="font-weight:bold; margin-left:10px;"></div>
+			<div id="opt_ex2_suppl" style="font-size:90%; margin-left:20px; "></div>
+			<div id="opt_ex2_desc"  style="margin:5px; margin-left:20px; padding:3px; background-color:#eee; border:2px solid; border-color:#ccc;"></div>
+			<hr style="margin-left:10px;">
+
+			<div id="opt_ex3_title" style="font-weight:bold; margin-left:10px;"></div>
+			<div id="opt_ex3_suppl" style="font-size:90%; margin-left:20px; "></div>
+			<div id="opt_ex3_desc"  style="margin:5px; margin-left:20px; padding:3px; background-color:#eee; border:2px solid; border-color:#ccc;"></div>
+	</td></tr>
+
+	<tr id="history"><td>
+		<div style="font-weight:bold" id="opt_histtitle"></div>
+		<span id="opt_history"></span>
+	</td></tr>
+
+</table>
+
+<li id="opt_gpl" style="font-size:-1"></li>
+
+<br>
+<textarea readonly id="tw_ext_result" style="background-color:#eff; width:80%; height:25px; display:none; position:absolute; left:165px; margin:5px; border:1px solid; border-color:#777;" spellcheck="false"></textarea>
+
+Debug Area <input type="button" id="tw_ext_btn" value="Check" style="margin:5px">
+
+<textarea id="tw_ext" style="width:100%; height:50px"></textarea>
+<span id="opt_debug"></span>
+
+</div>
+
+</body>
+</html>
+
+

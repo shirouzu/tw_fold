@@ -1,0 +1,53 @@
+{
+	"desc": { "message": "Twitter Stress Reduction" },
+	"opt_desc": { "message": "A mini tool to use Twitter comfortably.\nHide 'ForYou/Trending or etc' entries.\nAdd image fold buttons.\n (need to reload)" },
+	"opt_home": { "message": "Official Page (Info/Donate)" },
+	"opt_settings" : { "message": "Settings" },
+	"opt_enabled" : { "message": "Active" },
+
+	"opt_purge_trends" : { "message": "Search strings to be Hidden in trends/etc." },
+	"opt_purge_title" : { "message": "(Example)" },
+	"opt_purge_desc" : { "message": "Starting with ? means reg-ex.\nStarting with ?? affects name and body.\n(Top of ?/?? is not evaluated as reg-ex)" },
+	"opt_purge_example" : { "message": "?.*(Bloomberg|K-pop)\n?^(Politics · Trending)$\n?(#SayNoTo|#Trump|#Biden)\n?(Promoted by)" },
+
+	"opt_shortcut" : { "message": "To diasble twitter shortcuts. ('F' key means to add 'FAV' or etc)" },
+	"opt_movement" : { "message": "Hide 'Whats happening'" },
+	"opt_recommend" : { "message": "Hide 'Who to follow'" },
+	"opt_recom_topic" : { "message": "Hide follow Topic" },
+	"opt_explore_verify" : { "message": "Hide verified user of # tabs (Hide promoted entry)" },
+	"opt_fold" : { "message": "Using fold button in a tweet with image." },
+	"opt_direct_pass" : { "message": "Prevent to hide the tweet that is opened directly." },
+	"opt_explore_rev" : { "message": "Fold the top image of # tabs as default.(requires to check the Using fold button)" },
+	"opt_promo_del" : { "message": "Reduce promotions" },
+
+	"opt_uidesc" : { "message": "UI description" },
+	"opt_uidesc_contents" : { "message": "1. A tweet with image will has 'O' button at right/buttom position for folding.\n\n2. If Twitter Stress Reduction Icon is clicked, its all funcions will be stopped.\n\n3. To confirm hide string in DevTools that is shown with Ctrl + Shift + i on twitter screen."},
+	"opt_histlink" : { "message" : "Change History" },
+	"opt_histtitle" : { "message" : "Change History" },
+	"opt_history" : { "message" : "v2.9.0: Refine\nv2.8.2: Bugfix\nv2.8.1: For Firefox Nightly(Android)\nv2.7.2: Add Sync Search String To Hide\nAdd v2.6.0: Add Fold button On/Off\nv2.5.0: Add regex check button\nv2.4.5-v2.4.13: misc\nv2.4.4: Change format spec" },
+	"opt_sync_btn": { "message": "Sync (Experimental)" },
+	"opt_synchelp" : { "message": "Sync the 'Search strings to be Hidden' via api.shirouzu.jp, if the machines that are set with the same SharedKey.\n(The strings will be AES encrypted before upload)" },
+	"opt_syncdesc": { "message": "Sync the 'Search strings to be Hidden'" },
+	"opt_syncid": { "message": "SharedKey:" },
+	"opt_import": { "message": "Set Other SharedKey" },
+	"opt_revert": { "message": "Revert Self SharedKey" },
+	"opt_sync_prompt": { "message": "Set Other SharedKey" },
+
+	"opt_ex_title" : { "message": "Useful syntax examples" },
+
+	"opt_ex1_title" : { "message": "To hide a tweet with specified user account." },
+	"opt_ex1_suppl" : { "message": "(Hide the user's message and reply messages that contains @user)" },
+	"opt_ex1_desc" : { "message": "??^(@user|@user1|@user2)$" },
+
+	"opt_ex2_title" : { "message": "To hide user that name has specified icon." },
+	"opt_ex2_suppl" : { "message": "(Specify icon-char and alt-string)" },
+	"opt_ex2_desc" : { "message": "??^(🌈|Rainbow|🏳️‍🌈|Rainbow flag)$" },
+
+	"opt_ex3_title" : { "message": "To hide a tweet that contains specified charset." },
+	"opt_ex3_suppl" : { "message": "(specify first and last character of the unicode block)" },
+	"opt_ex3_desc" : { "message": "??.*[가-힣].* ... Hide a tweet that contains Hankul\n??.*[Ѐ-Ꚛ].* ... Hide a tweet that contains Kyrill\n??.*[𓀀-𓐮].* ... Hide a tweet that contains Hieroglyph" },
+
+	"opt_debug" : { "message": " { \"pict_list\": [1282873548374651591,1436651591040577816] }" },
+	"opt_gpl" : { "message": "You can use this chrome extension under the GPLv3 License." }
+}
+
